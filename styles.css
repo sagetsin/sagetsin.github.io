@@ -37,6 +37,154 @@ td {
   border-left: 2px solid #56463A;
 }
 
+br{
+   display:block;
+   content:"";
+   margin-top: 15px;
+}
+
+.player{
+   display: none;
+   height: 500px;
+   width: 500px;
+}
+
+
+.horizontal-line{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-style: inset;
+  border-width: 0px;
+  height: 5px;
+  background-color: #fcfffa;
+  width: 80%;
+}
+
+
+.horizontal-line2{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-style: inset;
+  border-width: 0px;
+  height: 5px;
+  background-color: #fcfffa;
+  width: 80%;
+}
+
+
+.top-fade{
+   background-image: linear-gradient(to top, rgba(252, 255, 250,0), rgba(252, 255, 250,1));
+   height: 150px;
+}
+.slogan-container {
+   width: 100%;  /* Full width of the screen */
+   overflow: hidden;  /* Hide anything that goes outside the container */
+   white-space: nowrap;  /* Prevent the text from wrapping to the next line */
+   position: relative;
+   padding:0px;
+   margin: 0px;
+}
+
+
+
+
+.slogan{
+   font-family: 'VT323', monospace;
+   font-style: italics;
+   font-size: 3.5em;
+   text-align: center;
+   padding: 0px;
+   margin: 0px;
+   color: #f8eaed;
+   display: inline-block;  /* Make it inline so it can move */
+   animation: moveText 20s linear infinite
+}
+
+
+
+
+h1 {
+ color: #fcfffa;
+ font-size: 5.5em;
+ text-align: left;
+ padding-top: 40px;
+ margin-left: 50px;
+ text-shadow:
+         -4px -4px 0 #8A9A5B,
+         4px -4px 0 #8A9A5B,
+         -4px 4px 0 #8A9A5B,
+         4px 4px 0 #8A9A5B,
+         2px 2px 4px black;
+ font-family: 'Pixelify Sans';
+}
+
+
+.article-title,
+h2 {
+ font-size: 2.5em;
+ text-align: left;
+ font-family: 'Press Start 2P';
+ color: #fcfffa;
+ margin-left: 30px;
+ margin-right: 30px;
+ text-decoration: none;
+ line-height: 1.6;
+}
+
+
+.article-title:hover{
+   cursor: url('./media/icons/star.png'), default;
+}
+
+
+h3 {
+ font-family: 'Pixelify Sans';
+ font-size: 2.5em;
+ text-align: left;
+ color: #8A9A5B;
+ text-shadow:
+           -2px -2px 0 #fcfffa,
+           2px -2px 0 #fcfffa,
+           -2px 2px 0 #fcfffa,
+           2px 2px 0 #fcfffa;
+ margin-left: 30px;
+ margin-right: 30px;
+}
+
+
+h4{
+ color: #56463A;
+ margin-left: 30px;
+ margin-right: 30px;
+ font-size: 50px;
+ font-family: 'Roboto Flex';
+ font-weight: 700;
+ line-height: 50px;
+
+
+}
+
+
+p,
+.text,
+ul,
+li,
+label {
+ color: #56463A;
+ margin-left: 30px;
+ margin-right: 30px;
+ font-size: 30px;
+ font-family: 'Roboto Flex';
+ line-height: 50px;;
+}
+
+
 .main-contents {
   display: flex;
   flex-direction: column;
@@ -117,27 +265,78 @@ td {
 }
 
 /* --- MUSIC SECTION --- */
-.main-music {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+
+
+.vinyl-right{
+   width: 400px;
+   top: 30%;
+   object-fit: cover;
+   position: absolute;
+   right: 90%;
+   transition: transform 0.3s ease-in-out;
 }
 
-.vinyl-right,
-.vinyl-left {
-  width: 200px;
-  position: relative;
-  top: unset;
+
+.vinyl-left{
+   width: 400px;
+   top: 30%;
+   object-fit: cover;
+   position: absolute;
+   left: 90%;
+   transition: transform 0.3s ease-in-out;
 }
 
-.vinyl-button-left,
-.vinyl-button-right {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  top: unset;
+
+.vinyl-left:hover{
+   transform: scale(1.2);
 }
+.vinyl-right:hover{
+   transform: scale(1.2);
+}
+
+
+.vinyl-button-left{
+   cursor: url('./media/icons/star.png'), default;
+   border: none;
+   width:400px;
+   height: 400px;
+   left: 90%;
+   top: 30%;
+   background: transparent;
+   position: absolute;
+}
+
+
+.vinyl-button-right{
+   border: none;
+   cursor: url('./media/icons/star.png'), default;
+   width:400px;
+   height: 400px;
+   right: 90%;
+   top: 30%;
+  background: transparent;
+   position: absolute;
+}
+
+
+@keyframes spin {
+   from {
+       transform: rotate(0deg); /* Start at 0 degrees */
+   }
+   to {
+       transform: rotate(360deg); /* End at 360 degrees */
+   }
+}
+
+
+.spotify-player{
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   width: 500px;
+   text-align: center;
+}
+
 
 /* --- CONTENT LAYOUT --- */
 .contents {
