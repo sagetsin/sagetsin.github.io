@@ -60,7 +60,7 @@ br{
 .header{
    display: flex;
    flex-direction: row;
-   width: 80%;
+   width: 1500px;
    height: 100px;
    position: sticky;
    align-items: center;
@@ -78,7 +78,7 @@ br{
 .quick-links{
    display: flex;
    flex-direction: row;
-   width: 100%px;
+   width: 1000px;
    height: 100px;
    align-items: center;
    padding-top: 20px;
@@ -134,7 +134,7 @@ br{
 
 
 .rectangle {
-   width: 80%;
+   width: 1500px;
    height: 100%;
    background-image: linear-gradient(#e07ea7, #e591b3, #eaadc6, #f2cfdb, #f8eaed, #fcfffa);
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
