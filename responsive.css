@@ -1,22 +1,215 @@
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .header {
-        flex-wrap: wrap; /* Wrap links to fit smaller screens */
+        flex-wrap: wrap; /* Wrap links to fit smaller screens
         padding: 10px;
     }
 
     .nav {
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens
         padding: 8px 10px;
     }
 
     .logo {
-        height: 60px; /* Scale down logo */
+        height: 60px; /* Scale down logo
     }
 
     .rectangle{
 
     }
+    body {
+       display: block;
+       height: auto;
+       overflow-x: hidden;
+       padding: 10px;
+}*/
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+    height: auto;
+    overflow-x: hidden;
+    padding: 10px;
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .quick-links {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .main-contents {
+    padding: 10px;
+  }
+
+  .logo {
+    height: 100px;
+    padding: 5px;
+  }
+
+  .headshot {
+    height: auto;
+    width: 100%;
+  }
+
+  .nav {
+    font-size: 14px;
+    height: auto;
+    padding: 8px;
+  }
+
+  .pdf {
+    width: 100%;
+    height: auto;
+  }
+
+  .rectangle {
+    width: 100%;
+  }
+
+  .vinyl-right,
+  .vinyl-left,
+  .vinyl-button-left,
+  .vinyl-button-right {
+    width: 150px;
+    height: 150px;
+    top: auto;
+    position: relative;
+    left: auto;
+    right: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .spotify-player {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .intro {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-page {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .article-display {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .article-pic {
+    width: 100%;
+  }
+
+  .article-image {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .article-info {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .horizontal-line,
+  .horizontal-line2 {
+    width: 100%;
+  }
+
+  .slogan {
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .article-title,
+  h2 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 10px;
+  }
+
+  h3 {
+    font-size: 2em;
+    text-align: center;
+    margin: 10px;
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  p,
+  .text,
+  ul,
+  li,
+  label {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 5px;
+    gap: 8px;
+  }
+
+  .grid-item {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .proj-img {
+    width: 100%;
+  }
+
+  .proj-demo {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .contact-but {
+    font-size: 14px;
+    padding: 10px 20px;
+    position: relative;
+    bottom: auto;
+    right: auto;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-img {
+    width: 100%;
+  }
 }
+
 
 /* Define the keyframes for rotation */
 @keyframes spin {

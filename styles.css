@@ -92,8 +92,6 @@ br{
 }
 
 
-
-
 .slogan{
    font-family: 'VT323', monospace;
    font-style: italics;
@@ -105,8 +103,6 @@ br{
    display: inline-block;  /* Make it inline so it can move */
    animation: moveText 20s linear infinite
 }
-
-
 
 
 h1 {
@@ -253,6 +249,10 @@ label {
   width: 100%;
   max-width: 800px;
   height: auto;
+  aspect-ratio: 11 / 8;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .rectangle {
@@ -353,18 +353,29 @@ label {
   text-align: center;
   line-height: 1.5;
 }
+.main-music{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
 
 .main-page {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  align-items: center;
+   display: flex;
+   flex-direction: row;
+   padding: 10px;
+   justify-content: space-around;
+   align-items: center;
+
 }
 
 .article-display {
   width: 100%;
-  flex-direction: column;
-  align-items: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   padding: 10px;
 }
 
 .article-pic {
@@ -420,20 +431,44 @@ label {
   text-align: center;
 }
 
-/* --- BUTTONS & LINKS --- */
-.spotify-launcher,
-.contact-but {
-  font-size: 14px;
-  padding: 10px 20px;
-  border-radius: 8px;
+
+.contact-but{
+   text-decoration: none;
+   background-color: #e07ea7;
+   color: #fcfffa;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 18px;
+   padding: 15px 30px;
+   border: none;
+   border-radius: 12px;
+   cursor: url('./media/icons/star.png'), default;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   transition: all 0.3s ease;
+   position: fixed;
+   bottom: 0;
+   right: 0;
 }
 
-.contact-but {
-  position: relative;
-  bottom: unset;
-  right: unset;
-  display: block;
-  margin: 20px auto;
+.contact-but:hover{
+   background-color: #eaadc6;
+   color: #fcfffa;
+   transform: scale(1.1);
+}
+.contact-but:active {
+   transform: scale(1);
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   padding: 10px;
+}
+
+.contact-img{
+   width: 700px;
 }
 
 /* --- GRID & IMAGE LAYOUT --- */
@@ -457,70 +492,3 @@ label {
   font-size: 1.2em;
 }
 
-/* --- CONTACT INFO --- */
-.contact-info {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.contact-img {
-  width: 100%;
-  max-width: 500px;
-}
-
-/* --- RESPONSIVE STYLING FOR iPhone & SMALL SCREENS --- */
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-
-  .quick-links {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 5px;
-  }
-
-  .nav {
-    font-size: 12px;
-    height: 35px;
-    padding: 5px;
-  }
-
-  .logo {
-    height: 100px;
-  }
-
-  .rectangle {
-    top: unset;
-  }
-
-  .vinyl-right,
-  .vinyl-left {
-    width: 150px;
-  }
-
-  .vinyl-button-left,
-  .vinyl-button-right {
-    width: 150px;
-    height: 150px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  .article-title,
-  h2 {
-    font-size: 1.5em;
-  }
-
-  .spotify-launcher,
-  .contact-but {
-    font-size: 12px;
-    padding: 8px 15px;
-  }
-}
