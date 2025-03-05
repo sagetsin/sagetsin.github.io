@@ -60,7 +60,7 @@ br{
 .header{
    display: flex;
    flex-direction: row;
-   width: 80vh;
+   width: 90vh;
    height: 100px;
    position: sticky;
    align-items: center;
