@@ -254,7 +254,8 @@ br{
 
 
 .article-pic{
-   width: 300px;
+   width: 30vh;
+   max-width: 200px;
 }
 
 
@@ -318,7 +319,7 @@ br{
    height: 150px;
 }
 .slogan-container {
-   width: 100%;  /* Full width of the screen */
+   width: 80vh;  /* Full width of the screen */
    overflow: hidden;  /* Hide anything that goes outside the container */
    white-space: nowrap;  /* Prevent the text from wrapping to the next line */
    position: relative;
