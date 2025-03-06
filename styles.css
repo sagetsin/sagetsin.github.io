@@ -104,7 +104,7 @@ br{
 .nav{
    text-decoration: none;
    color: #fcfffa; /*white*/
-   font-size: 18px;
+   font-size: 14px;
    background-color: #8A9A5B;
    margin: 0px;
    height: 50px;
@@ -272,6 +272,7 @@ br{
 .article-info{
    display: flex;
    flex-direction: column;
+   white-space: wrap;
    align-items: left;
    padding: 10px;
    text-align: left;
@@ -365,7 +366,7 @@ h1 {
 
 .article-title,
 h2 {
- font-size: 2.5em;
+ font-size: 2em;
  text-align: left;
  font-family: 'Press Start 2P';
  color: #fcfffa;
