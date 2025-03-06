@@ -60,7 +60,7 @@ br{
 .header{
    display: flex;
    flex-direction: row;
-   width: 90%;
+   width: 80%;
    height: 100px;
    position: sticky;
    align-items: center;
@@ -134,7 +134,7 @@ br{
 
 
 .rectangle {
-   width: 80%;
+   width: 70%;
    height: 100%;
    background-image: linear-gradient(#e07ea7, #e591b3, #eaadc6, #f2cfdb, #f8eaed, #fcfffa);
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -221,6 +221,7 @@ br{
 
 
 .contents{
+   width: 70%;
    margin-top: 100px;
    padding: 20px;
    align-items: center;
@@ -315,11 +316,12 @@ br{
 
 
 .top-fade{
+   width: 70%;
    background-image: linear-gradient(to top, rgba(252, 255, 250,0), rgba(252, 255, 250,1));
    height: 150px;
 }
 .slogan-container {
-   width: 80%;  /* Full width of the screen */
+   width: 70%;  /* Full width of the screen */
    overflow: hidden;  /* Hide anything that goes outside the container */
    white-space: nowrap;  /* Prevent the text from wrapping to the next line */
    position: relative;
