@@ -56,6 +56,8 @@ br{
    padding: 15px;
    align-items: center;
    position: relative;
+   gap: 15px;
+
 }
 
 
@@ -87,7 +89,6 @@ br{
    padding-bottom: 20px;
    padding-right: 0px;
    padding-left: 0px;
-   top: 100px;
 }
 
 
