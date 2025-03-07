@@ -54,6 +54,7 @@ br{
    flex-direction: column;
    padding: 15px;
    align-items: center;
+   position: relative;
 }
 
 
@@ -150,20 +151,20 @@ br{
 
 .vinyl-right{
    width: 400px;
-   top: 30%;
+   top: 30vh;
    object-fit: cover;
    position: absolute;
-   right: 90%;
+   right: 90vw;
    transition: transform 0.3s ease-in-out;
 }
 
 
 .vinyl-left{
    width: 400px;
-   top: 30%;
+   top: 30vh;
    object-fit: cover;
    position: absolute;
-   left: 90%;
+   left: 90vw;
    transition: transform 0.3s ease-in-out;
 }
 
