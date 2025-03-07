@@ -16,6 +16,7 @@ body {
  align-items: center;
  height: 100vh;
  overflow-x: hidden;
+ position: relative;
 }
 
 
@@ -86,7 +87,7 @@ br{
    padding-bottom: 20px;
    padding-right: 0px;
    padding-left: 0px;
-   top: 30%;
+   top: 100px;
 }
 
 
@@ -109,7 +110,7 @@ br{
    font-size: 14px;
    background-color: #8A9A5B;
    margin: 0px;
-   height: 50px;
+   height: 40px;
    flex-basis: 100%;
    text-align: center;
    font-family: 'Press Start 2P';
@@ -136,12 +137,13 @@ br{
 
 
 .rectangle {
-   width: 70vw;
+   width: 1500px;
    height: 100%;
    background-image: linear-gradient(#e07ea7, #e591b3, #eaadc6, #f2cfdb, #f8eaed, #fcfffa);
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
    top: 100px;
 }
+
 .main-music{
    display: flex;
    flex-direction: row;
@@ -342,6 +344,7 @@ br{
    text-align: center;
    padding: 0px;
    margin: 0px;
+   white-space: nowrap;
    color: #f8eaed;
    display: inline-block;  /* Make it inline so it can move */
    animation: moveText 20s linear infinite
