@@ -78,13 +78,14 @@ br{
 .quick-links{
    display: flex;
    flex-direction: row;
-   width: 100vw;
+   width: 80vw;
    height: 100px;
    align-items: center;
    padding-top: 20px;
    padding-bottom: 20px;
    padding-right: 0px;
    padding-left: 0px;
+   top: 30%;
 }
 
 
