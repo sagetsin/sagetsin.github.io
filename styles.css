@@ -57,7 +57,6 @@ br{
    align-items: center;
    position: relative;
    gap: 15px;
-
 }
 
 
@@ -136,7 +135,7 @@ br{
    height: fit-content;
    background-image: linear-gradient(#e07ea7, #e591b3, #eaadc6, #f2cfdb, #f8eaed, #fcfffa);
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-   top: 100px;
+   top: 1000px;
 }
 
 .main-music{
