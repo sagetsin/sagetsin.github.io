@@ -63,19 +63,12 @@ br{
 
 .header{
    display: flex;
-   flex-direction: row;
-   width: 80vw;
-   height: 100px;
-   position: sticky;
+   width: 1167px;
+   height: 63px;
+   padding: 0 18px;
+   justify-content: flex-end;
    align-items: center;
-   top: 0;
-   z-index: 1000;
-   background-color: #FFFFFF;
-   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-   padding-top: 20px;
-   padding-bottom: 20px;
-   padding-right: 0px;
-   padding-left: 0px;
+   gap: 30px;
 }
 
 
