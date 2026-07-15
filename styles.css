@@ -98,7 +98,7 @@ br{
 
 
 .headshot{
-   height: 700px;
+   height: 600px;
 }
 
 
@@ -109,7 +109,9 @@ br{
    background-color: #8A9A5B;
    margin: 0px;
    height: 40px;
-   flex-basis: 100%;
+   flex-basis: 0;
+   flex-grow: 1;
+   line-height: 1;
    text-align: center;
    font-family: 'Press Start 2P';
    transition: background-color 0.3s ease;
@@ -326,7 +328,7 @@ br{
    padding: 38px 496px 302px 42px;
    justify-content: center;
    align-items: center;
-   position: absolute;
+   position: relative;
    gap: 10px;
 }
 .slogan-container {
