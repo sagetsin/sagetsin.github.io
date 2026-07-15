@@ -63,6 +63,8 @@ br{
 .header{
    display: flex;
    width: 1167px;
+   background-color:#ffffff;
+   box-shadow: 0 4px 10px var(--sds-size-depth-025) rgba(0, 0, 0, 0.25);
    height: 63px;
    padding: 0 18px;
    justify-content: flex-end;
@@ -91,7 +93,7 @@ br{
  height: 150px;
  margin-top: 10px;
  padding: 10px;
- top: 0;
+ top: 20px;
 }
 
 
@@ -319,12 +321,12 @@ br{
 .top-fade{
    width: 70vw;
    background-image: linear-gradient(to top, rgba(252, 255, 250,0), rgba(252, 255, 250,1));
-   height: 150px;
    display: flex;
    height: 629px;
    padding: 38px 496px 302px 42px;
    justify-content: center;
    align-items: center;
+   position: absolute;
    gap: 10px;
 }
 .slogan-container {
