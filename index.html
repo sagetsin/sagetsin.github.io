@@ -11,42 +11,59 @@
     <script src="./index.js"></script>
 </head>
 <body>
-<div class="main-contents">
-    <header class="header">
+
+  <header class="navbar">
+    <div class="logo">
         <img src="media/images/logo.png" class="logo" alt="logo">
-        <a class="nav" href="">Home</a>
+    </div>
+    <nav>
+      <a class="nav" href="">Home</a>
         <a class="nav" href="main/pages/about.html">About me</a>
         <a class="nav" href="main/pages/personal-proj.html">Projects</a>
         <a class="nav" href="main/pages/resume.html">Resume</a>
         <a class="nav" href="main/pages/art-portfolio.html">Art Portfolio</a>
         <a class="nav" href="main/pages/articles.html">Articles</a>
         <a class="nav" href="https://www.linkedin.com/in/sydney-tsin/" target="_blank">LinkedIn</a>
-    </header>
-    <main class="rectangle">
-        <div class="top-fade">
-            <h1>WELCOME TO MY WEBSITE</h1>
-        </div>
-        <!-- <div class="slogan-container">
-            <p class="slogan"> Create, advocate, innovate. Create, advocate, innovate. Create, advocate, innovate.
-                Create, advocate, innovate. Create, advocate, innovate.</p>
-        </div> -->
-        <div class="contents">
-            <div class="main-page">
-                <p class="intro">
-                    My name is Sydney Tsin, and I am a Computer Science BS/MS student at Rochester Institute of
-                    Technology. I am based in Rochester, NY and Buffalo, NY. I am currently a second year student
-                    projected to graduate May 2028. I am proficient in Java and C and currently looking for a Software
-                    Engineering, Game Design, or Computer Science co-op. My availability is June 2025- December 2025.
-                </p>
-                <img src="media/images/headshot.JPG" class="headshot" alt="headshot">
-            </div>
-        </div>
-    </main>
-</div>
+    </nav>
+  </header>
+
+  <main class="page">
+
+    <section class="hero">
+      <h1>
+        Welcome to my<br>
+        website
+      </h1>
+
+      <div class="decor-line"></div>
+    </section>
+
+    <section class="intro-card">
+      <div class="intro-text">
+        <p>
+          Sydney Tsin is a foruth year Computer Science student pursuing a Bachelor of Science in Computer Science with a Minor in French at the Rochester Institute of Technology (RIT). She actively pursues opportunities in software engineering and programming to enhance her technical and soft skills. She is passionate about community, creativity, and computing. Eager to forge connections and relationships, Sydney seeks to grow and explore more about the world and herself.
+
+She has previously worked as a Software Engineer Co-op with the DevOps team at Honeywell. As a Residential Advisor, she has developed a strong sense of community among her residents, providing support and leadership. 
+
+Sydney is also creative, expressing herself through fashion and art, engaging in painting, drawing, makeup, tabletop roleplaying games, and cosplay. Her commitment to computing is evident through her involvement in the Women in Computing club at RIT, where she advocates for women and gender minorities, fosters connections, and strengthens her community with like-minded individuals. 
+
+Sydney has gained coding experience in Java, Python, HTML, CSS, TypeScript, and C, with Java being her strongest language. She has completed projects using JavaFX, JUnit, JApplet, and REST API. In addition, she has worked on projects involving Angular CLI, Godot, and Git for version control and is familiar with Scrum and Agile processes. 
+
+Sydney utilizes Microsoft and Google Suites in her school assignments and her role as a Student Assistant for Clubs and Organizations at the Center for Campus Life at RIT. She aims to secure an internship or co-op to further develop her technical skills, build meaningful connections, gain professional experience, advocate for inclusivity and diversity in tech spaces, and reinforce her passions for computing, community, and creativity.
+        </p>
+      </div>
+
+      <div class="profile-wrapper">
+            <img src="media/images/headshot.JPG" class="headshot" alt="headshot">
+      </div>
+    </section>
+
+  </main>
+
 <a class="contact-but" href="https://sagetsin.github.io/main/pages/contact-me.html">Contact me</a>
 <img src="media/images/vinyl.png" alt="vinyl" id="vinyl-left" class="vinyl-left">
 <img src="media/images/vinyl.png" alt="vinyl" id="vinyl-right" class="vinyl-right">
 <button class="vinyl-button-left" onclick="openPopup(); activate()"></button>
 <button class="vinyl-button-right" onclick="openPopup();activate()"></button>
+
 </body>
-</html>
