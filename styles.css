@@ -135,7 +135,6 @@ br{
    height: fit-content;
    background-image: linear-gradient(#e07ea7, #e591b3, #eaadc6, #f2cfdb, #f8eaed, #fcfffa);
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-   padding-top: 300px;
 }
 
 .main-music{
@@ -319,6 +318,12 @@ br{
    width: 70vw;
    background-image: linear-gradient(to top, rgba(252, 255, 250,0), rgba(252, 255, 250,1));
    height: 150px;
+   display: flex;
+   height: 629px;
+   padding: 38px 496px 302px 42px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
 }
 .slogan-container {
    width: 70vw;  /* Full width of the screen */
